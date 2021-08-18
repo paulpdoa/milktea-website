@@ -1,5 +1,14 @@
 import {motion} from 'framer-motion';
 
+const buttonVariants = {
+    hover: {
+        scale: 1.1,
+        transition: {
+            yoyo: Infinity
+        }
+    }
+}
+
 const Header = () => {
     return (
         <motion.header 
@@ -14,7 +23,10 @@ const Header = () => {
                 <div>
                     <h1 className="text-6xl font-extrabold">Lorem ipsum dolor<br/> sit amet.</h1>
                     <p className="">Lorem ipsum dolor sit amet consectetur<br/> adipisicing elit. Assumenda, aspernatur!</p>
-                    <button className="text-4xl font-bold text-gray-800 bg-yellow-300 mt-12 p-5 rounded-md">Order Now!</button>
+                    <motion.button
+                    variants={buttonVariants}
+                    whileHover="hover" 
+                    className="text-4xl font-bold text-gray-800 bg-yellow-300 mt-12 p-5 rounded-md">Order Now!</motion.button>
                 </div>
             </div>
         </motion.header>

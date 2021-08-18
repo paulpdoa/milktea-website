@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-100 shadow-2xl text-gray-700">
+        <footer className="bg-yellow-100 shadow-2xl text-gray-700">
             
             <div className="grid grid-cols-2 py-16 px-32">
                 <div>
@@ -31,7 +31,7 @@ const Footer = () => {
                    </div>
                 </div>
             </div>
-            <div className="px-5 p-5 flex justify-around">
+            <div className="px-5 p-5 flex justify-around shadow-xl">
                 <div>
                     <p className="text-xs">Milktea 2021. All Rights reserved</p>
                 </div>

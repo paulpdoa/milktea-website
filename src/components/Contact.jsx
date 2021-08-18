@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div className="bg-gray-50">
+        <div className="bg-green-100">
             <div className="px-24 py-24 grid grid-cols-2 text-gray-900">
                 <div className="flex justify-center">
                     <img src="/image/milktea2.png" alt="milktea" />
