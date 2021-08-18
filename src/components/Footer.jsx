@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -39,20 +40,10 @@ const Footer = () => {
                     <p className="text-xs">milkteashop@gmail.com</p>
                 </div>
                 <div className="flex justify-around w-32">
-                    <a href="#" className="fa fa-facebook text-blue-700"></a>
-                    <a href="#" className="fa fa-twitter text-blue-500"></a>
-                    <a href="#" className="fa fa-instagram text-blue-500"></a>
+                    <Link to="#" className="fa fa-facebook text-blue-700"></Link>
+                    <Link to="#" className="fa fa-twitter text-blue-500"></Link>
+                    <Link to="#" className="fa fa-instagram text-blue-500"></Link>
                 </div>
-            </div>
-
-            <div className="circles"> { /* animation area */ } 
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </div>
         </footer>
     )

@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Products from "./components/Products";
 import {Switch, Route} from 'react-router-dom';
-import SocialMedia from "./components/SocialMedia";
 import Footer from './components/Footer';
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
           <Route exact path='/'>
             <Header />
             <Products />
-            <SocialMedia />
             <Contact />
             <Footer />
           </Route>
