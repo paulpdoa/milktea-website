@@ -1,5 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import {motion} from 'framer-motion';
+
+const dropDownVariants = {
+    hidden: {
+        y: '-100vw',
+        opacity:0
+    },
+    visible: {
+        y:0,
+        opacity:1,
+        transition: {
+            duration: 1.5
+        }
+    }
+}
+
 const Navbar = () => {
 
     return (
@@ -10,20 +26,20 @@ const Navbar = () => {
             <ul className="col-span-4 flex justify-around text-gray-800">
                 <li className="group relative">
                     <a className="text-green-300 cursor-pointer">Home</a>
-                    <div className="group-hover:block hidden">
-                        <ul className="top-0 py-16 w-72 mt-14 grid grid-rows-5 justify-items-center gap-5 bg-gray-200 absolute">
-                            <a>Sample 1</a>
-                            <a>Sample 2</a>
-                            <a>Sample 3</a>
-                            <a>Sample 4</a>
-                            <a>Sample 5</a>
+                    <div className="group-hover:block hidden pb-5 -mb-5">
+                        <ul className="top-0 py-8 w-72 mt-9 grid grid-rows-5 justify-items-start p-5 gap-5 bg-gray-50 absolute rounded-xl">
+                            <li>Sample 1</li>
+                            <li>Sample 2</li>
+                            <li>Sample 3</li>
+                            <li>Sample 4</li>
+                            <li>Sample 5</li>
                         </ul>
                     </div>
                 </li>
                 <li className="group relative">
                     <a className="hover:text-green-300 cursor-pointer">Menu</a>
-                    <div className="group-hover:block hidden">
-                        <ul className="top-0 py-16 w-72 mt-14 grid grid-rows-5 justify-items-center gap-5 bg-gray-200 absolute">
+                    <div className="group-hover:block hidden pb-5 -mb-5">
+                        <ul className="top-0 py-8 w-72 mt-9 grid grid-rows-5 justify-items-start p-5 gap-5 bg-gray-50 absolute rounded-xl">
                             <li>Sample 1</li>
                             <li>Sample 2</li>
                             <li>Sample 3</li>
@@ -34,8 +50,8 @@ const Navbar = () => {
                 </li>
                 <li className="group relative">
                     <a className="hover:text-green-300 cursor-pointer">Blog</a>
-                    <div className="group-hover:block hidden">
-                        <ul className="top-0 py-16 w-72 mt-14 grid grid-rows-5 justify-items-center gap-5 bg-gray-200 absolute">
+                    <div className="group-hover:block hidden pb-5 -mb-5">
+                        <ul className="top-0 py-8 w-72 mt-9 grid grid-rows-5 justify-items-start p-5 gap-5 bg-gray-50 absolute rounded-xl">
                             <li>Sample 1</li>
                             <li>Sample 2</li>
                             <li>Sample 3</li>
@@ -46,8 +62,8 @@ const Navbar = () => {
                 </li>
                 <li className="group relative">
                     <a className="hover:text-green-300 cursor-pointer">Franchising</a>
-                    <div className="group-hover:block hidden">
-                        <ul className="top-0 py-16 w-72 mt-14 grid grid-rows-5 justify-items-center gap-5 bg-gray-200 absolute">
+                    <div className="group-hover:block hidden pb-5 -mb-5">
+                        <ul className="top-0 py-8 w-72 mt-9 grid grid-rows-5 justify-items-start p-5 gap-5 bg-gray-50 absolute rounded-xl">
                             <li>Sample 1</li>
                             <li>Sample 2</li>
                             <li>Sample 3</li>
@@ -58,8 +74,8 @@ const Navbar = () => {
                 </li>
                 <li className="group relative">
                     <a className="hover:text-green-300 cursor-pointer">Career</a>
-                    <div className="group-hover:block hidden">
-                        <ul className="top-0 py-16 w-72 mt-14 grid grid-rows-5 justify-items-center gap-5 bg-gray-200 absolute">
+                    <div className="group-hover:block hidden pb-5 -mb-5">
+                        <ul className="top-0 py-8 w-72 mt-9 grid grid-rows-5 justify-items-start p-5 gap-5 bg-gray-50 absolute rounded-xl">
                             <li>Sample 1</li>
                             <li>Sample 2</li>
                             <li>Sample 3</li>
@@ -70,8 +86,8 @@ const Navbar = () => {
                 </li>
                 <li className="group relative">
                     <a className="hover:text-green-300 cursor-pointer">Locations</a>
-                    <div className="group-hover:block hidden">
-                        <ul className="top-0 py-16 w-72 mt-14 grid grid-rows-5 justify-items-center gap-5 bg-gray-200 absolute">
+                    <div className="group-hover:block hidden pb-5 -mb-5">
+                        <ul className="top-0 py-8 w-72 mt-9 grid grid-rows-5 justify-items-start p-5 gap-5 bg-gray-50 absolute rounded-xl">
                             <li>Sample 1</li>
                             <li>Sample 2</li>
                             <li>Sample 3</li>

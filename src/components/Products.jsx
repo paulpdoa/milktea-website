@@ -18,7 +18,7 @@ const leftVariant = {
 
 const Products = () => {
     return (
-        <div className="bg-gray-100 px-24 py-16 text-gray-800 relative">
+        <div className="bg-gray-100 px-24 py-16 text-gray-800 relative z-0">
             <div className="grid grid-cols-3 justify-items-center gap-10">
                 <motion.div 
                 variants={leftVariant}

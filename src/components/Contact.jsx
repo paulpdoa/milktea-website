@@ -13,12 +13,12 @@ const Contact = () => {
                     <form className="relative p-12">
                         <div className="grid grid-cols-2 gap-2">
                             <div className="grid grid-row-3 gap-2 h-1/2">
-                                <input className="border rounded-sm outline-none border-gray-500 p-1" type="text" placeholder="Name*" />
-                                <input className="border rounded-sm outline-none border-gray-500 p-1" type="email" placeholder="Email*" />
+                                <input className="border rounded-sm outline-none border-gray-500 p-1" type="text" placeholder="Name*" required />
+                                <input className="border rounded-sm outline-none border-gray-500 p-1" type="email" placeholder="Email*" required />
                                 <input className="border rounded-sm outline-none border-gray-500 p-1" type="text" placeholder="Subject" />
                             </div>
                             <div className="flex justify-center items-center">
-                                <textarea className="border rounded-md outline-none border-gray-500 h-full p-1" placeholder="Message" cols="30" rows="3"></textarea>
+                                <textarea className="border rounded-md outline-none border-gray-500 h-full p-1" placeholder="Message" cols="30" rows="3" required></textarea>
                             </div>
                             <button className="absolute p-2 bg-green-500 rounded-lg w-32 text-gray-100 font-bold bottom-0">Send</button>
                         </div>
